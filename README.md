@@ -60,6 +60,14 @@
 
 ## LSH analysis
 
+### **Python File for Execution**
+
+The **Python file** responsible for execution is located at:
+
+```git 
+spark_apps/lsh.py
+```
+
 ### Analysis Results
 
 Below is a table summarizing the accuracy data for various parameter configurations. The values represent the mean of multiple observations. Detailed results for each experiment can be found in the file `book_data/result.txt`.
