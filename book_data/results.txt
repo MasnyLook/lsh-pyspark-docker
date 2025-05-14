@@ -97,3 +97,12 @@ Liczba zer (FP): 33196
 params: shingle_size: 4, signature_size: 50, num_bands: 10
 Liczba jedynek (TP): 36674
 Liczba zer (FP): 33012
+params: shingle_size: 6, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 32183
+Liczba zer (FP): 31409
+params: shingle_size: 8, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 24065
+Liczba zer (FP): 26713
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 62449
+Liczba zer (FP): 54163

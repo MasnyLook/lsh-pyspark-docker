@@ -26,9 +26,9 @@ def band_hash(band):
 
 
 def main():
-    shingle_size = 4
-    signature_size = 50
-    num_bands = 10
+    shingle_size = 3
+    signature_size = 100
+    num_bands = 20
 
     conf=SparkConf()
     conf.set("spark.executor.memory", "6g")
@@ -54,7 +54,7 @@ def main():
         .distinct()
 
     # Tworzymy RDD z shingles, postać {question_id: [shingle1, shingle2, ...]}
-    shingles_rdd = questions_rdd.mapValues(lambda question: make_shingles(question, shingle_size)).persist()
+    shingles_rdd = questions_rdd.mapValues(lambda question: make_shingles(question, shingle_size))
 
     # Tworzymy seedy dla funkcji haszujących shignle
     hash_seeds = [random.randint(0, 2**32) for _ in range(signature_size)]
@@ -63,7 +63,7 @@ def main():
     # broadcast_seeds = [3646798515, 20632853, 1924355997, 2813258669, 897037277, 1510520485, 2835793175, 3562787004, 4260788798, 1796992687, 1791768213, 3570753509, 1055406813, 3902062270, 2835710828, 1279227446, 2285974268, 1956597397, 276158360, 3485137740, 3646967364, 1691485754, 230406902, 2604928405, 1419501399, 1364430976, 4072675881, 1531760221, 3093534820, 734903156, 4170989928, 2700074238, 1818251861, 4119385983, 1802736899, 2095298345, 3683688909, 487799583, 4022097722, 2750551365, 2849916662, 3971404097, 3011318716, 854542203, 2576754756, 3083350607, 207870587, 610878916, 2107821498, 2008447528, 3797388966, 1961498714, 2641801248, 1393086400, 1541907735, 2951538026, 2779947522, 2680463119, 2182535771, 1533102354, 2211221137, 2460094005, 2759591294, 3693381718, 2098866793, 1823305630, 1965360225, 177496865, 733523201, 1855870932, 2142600284, 479810803, 3819329244, 665871027, 2068008802, 1277055779, 525341537, 2479431193, 3705525580, 4028255913, 2102928633, 440015185, 2066294723, 64909738, 3659910647, 2670110098, 2431412670, 656419802, 1119560550, 561067390, 267800057, 3550530617, 3966344859, 3925231226, 2384275550, 1568452012, 349063069, 713648294, 1682400860, 1550857543]
 
     # Tworzymy sygnatury, postać {question_id: [signature1, signature2, ...]}
-    signatures_rdd = shingles_rdd.mapValues(lambda shingles: create_signature(shingles, broadcast_seeds)).persist()
+    signatures_rdd = shingles_rdd.mapValues(lambda shingles: create_signature(shingles, broadcast_seeds))
 
     rows_per_band = signature_size // num_bands
 
@@ -73,7 +73,7 @@ def main():
             x[0],
             [band_hash(x[1][i * rows_per_band:(i + 1) * rows_per_band]) for i in range(num_bands)]
         )
-    ).persist()
+    )
 
     # Tworzymy RDD z parami, gdzie dołącamy bandy do id pierwszego pytania 
     # postać : {question_id: ((id2, value), [band1, band2, ...])}
@@ -110,10 +110,6 @@ def main():
         file.write(f"params: shingle_size: {shingle_size}, signature_size: {signature_size}, num_bands: {num_bands}\n")
         file.write(f"Liczba jedynek (TP): {count_ones}\n")
         file.write(f"Liczba zer (FP): {count_zeros}\n")
-
-    bands_rdd.unpersist()
-    signatures_rdd.unpersist()
-    shingles_rdd.unpersist()
 
 main()
 

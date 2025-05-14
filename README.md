@@ -85,6 +85,8 @@ Below is a table summarizing the accuracy data for various parameter configurati
 | 4            | 100            | 20               | 48,910              | 43,113              |
 | 4            | 100            | 25               | 70,293              | 61,260              |
 | 5            | 100            | 20               | 39,617              | 36,643              |
+| 6            | 100            | 20               | 32,183              | 31,409              |
+| 8            | 100            | 20               | 24,065              | 26,713              |
 
 For most observations, the precision (calculated as TP / (TP + FP)) is approximately 0.54.
 
