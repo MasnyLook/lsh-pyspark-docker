@@ -92,9 +92,9 @@ For most observations, the precision (calculated as TP / (TP + FP)) is approxima
 
 ### Observations
 
-- **Shingle Size**: The best precision is achieved with shingle sizes of 3 or 4. A size of 2 appears to be too small, while larger sizes may lead to reduced precision.
-- **Signature Size**: Optimal values for the signature size are around 100.
-- **Number of Bands**: The best results are observed with 20–25 bands.
+- **Shingle Size**: The best precision is achieved with shingle sizes of 3 or 4. A size of 2 appears to be too small, while larger sizes may lead to reduced precision. For larger shingle sizes, the number of false positives (FP) decreases due to increased specificity, but the number of true positives (TP) also decreases.
+- **Signature Size**: Optimal values for the signature size are around 100. Higher values result in longer computation times but provide more unique hash values, reducing the number of false positives (FP).
+- **Number of Bands**: The best results are observed with 20–25 bands. A higher number of bands increases the number of potential candidates, but many of these are likely to be false positives (FP).
 
 ### Conclusion
 
