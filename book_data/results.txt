@@ -1,0 +1,99 @@
+params: shingle_size: 3, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 19460
+Liczba zer (FP): 16208
+params: shingle_size: 3, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 19672
+Liczba zer (FP): 15938
+params: shingle_size: 3, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 18929
+Liczba zer (FP): 17013
+params: shingle_size: 3, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 19150
+Liczba zer (FP): 16764
+params: shingle_size: 3, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 18683
+Liczba zer (FP): 16965
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 60862
+Liczba zer (FP): 51555
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 63505
+Liczba zer (FP): 54202
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 62002
+Liczba zer (FP): 53131
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 62084
+Liczba zer (FP): 52839
+params: shingle_size: 3, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 63784
+Liczba zer (FP): 54259
+params: shingle_size: 3, signature_size: 50, num_bands: 5
+Liczba jedynek (TP): 14186
+Liczba zer (FP): 11778
+params: shingle_size: 3, signature_size: 50, num_bands: 5
+Liczba jedynek (TP): 14624
+Liczba zer (FP): 13021
+params: shingle_size: 3, signature_size: 50, num_bands: 5
+Liczba jedynek (TP): 14011
+Liczba zer (FP): 11883
+params: shingle_size: 4, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 49032
+Liczba zer (FP): 43305
+params: shingle_size: 4, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 49195
+Liczba zer (FP): 42930
+params: shingle_size: 4, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 48503
+Liczba zer (FP): 43104
+params: shingle_size: 5, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 40173
+Liczba zer (FP): 37370
+params: shingle_size: 5, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 38703
+Liczba zer (FP): 35825
+params: shingle_size: 5, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 39975
+Liczba zer (FP): 36734
+params: shingle_size: 3, signature_size: 200, num_bands: 40
+Liczba jedynek (TP): 77111
+Liczba zer (FP): 66454
+params: shingle_size: 3, signature_size: 200, num_bands: 40
+Liczba jedynek (TP): 75770
+Liczba zer (FP): 64919
+params: shingle_size: 3, signature_size: 200, num_bands: 100
+Liczba jedynek (TP): 147050
+Liczba zer (FP): 210637
+params: shingle_size: 2, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 93878
+Liczba zer (FP): 85658
+params: shingle_size: 2, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 95157
+Liczba zer (FP): 90168
+params: shingle_size: 2, signature_size: 100, num_bands: 20
+Liczba jedynek (TP): 91858
+Liczba zer (FP): 85077
+params: shingle_size: 4, signature_size: 100, num_bands: 25
+Liczba jedynek (TP): 70069
+Liczba zer (FP): 60684
+params: shingle_size: 4, signature_size: 100, num_bands: 25
+Liczba jedynek (TP): 70172
+Liczba zer (FP): 61012
+params: shingle_size: 4, signature_size: 100, num_bands: 25
+Liczba jedynek (TP): 70638
+Liczba zer (FP): 62084
+params: shingle_size: 4, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 13942
+Liczba zer (FP): 14034
+params: shingle_size: 4, signature_size: 100, num_bands: 10
+Liczba jedynek (TP): 13399
+Liczba zer (FP): 13202
+params: shingle_size: 4, signature_size: 50, num_bands: 10
+Liczba jedynek (TP): 36029
+Liczba zer (FP): 32723
+params: shingle_size: 4, signature_size: 50, num_bands: 10
+Liczba jedynek (TP): 36686
+Liczba zer (FP): 33196
+params: shingle_size: 4, signature_size: 50, num_bands: 10
+Liczba jedynek (TP): 36674
+Liczba zer (FP): 33012
